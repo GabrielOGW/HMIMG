@@ -40,3 +40,20 @@ a {
     color-scheme: dark;
   }
 }
+
+.input {
+  background: var(--gray-alpha-100, rgba(255, 255, 255, 0.05));
+  border: 1px solid var(--gray-alpha-200, rgba(255, 255, 255, 0.1));
+  color: white;
+  font-size: 16px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+  width: 100%;
+}
+
+.input:focus {
+  border-color: var(--button-primary-hover, #ccc);
+  background: rgba(255, 255, 255, 0.1);
+}
